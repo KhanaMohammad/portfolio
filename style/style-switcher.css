@@ -1,0 +1,91 @@
+.style-switcher{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: var(--bg-black-100);
+    margin: 1px solid var(--bg-black-50);
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 100;
+    transition: all .3s ease;
+    transform: translateX(100%);
+}
+.style-switcher.open{
+    transform: translateX(-25px);
+}
+.s-icon img{
+    width: 30px;
+   margin-top: 5px;
+}
+.s-icon{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 100%;
+    text-align: center;
+    margin-right: 25px;
+    border: 1px solid var(--bg-black-50);
+    background-color: #fdf9ff;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .3s ease;
+
+}
+.day-night  {
+    top: 55px;
+}
+.style-switcher-toggle{
+    top: 0;
+}
+.style-switcher .style-switcher-toggle img{
+    
+    animation: test;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+    
+}
+.style-switcher h4{
+    margin: 0 0 10px;
+    color:var(--text-black-900);
+}
+.style-switcher .colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.style-switcher .colors span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+   
+}
+.style-switcher .color-1{
+    background: #ec1839;
+}
+.style-switcher .color-2{
+    background: #fa5b0f;
+}
+.style-switcher .color-3{
+    background: #37b182;
+}
+.style-switcher .color-4{
+    background: #1854b4;
+}
+.style-switcher .color-5{
+    background: #f021b2;
+}
+
+
+
+
+@keyframes test {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
